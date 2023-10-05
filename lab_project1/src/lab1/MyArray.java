@@ -12,6 +12,9 @@ public class MyArray {
 	}
 
 	// Method 1 :
+	// Method mirror that outputs the contents of an array in a
+	// reverse order like a mirror
+	// Example: input [1, 2, 3] ==> output: [1, 2, 3, 3, 2, 1]
 	public int[] mirror() {
 		int n = array.length;
 		int[] newArray = new int[n * 2];
@@ -20,7 +23,7 @@ public class MyArray {
 		for (int i = 0; i < n; i++) {
 			newArray[i] = array[i];
 			// chạy từ vị trí thứ ba trở đi sau vị trí 0,1,2
-			newArray[2 * n - i - 1] = array[i];
+			newArray[2 * n -i- 1] = array[i];
 			// vd newArray đang có 3 pt thì nhân 2 ra 6 xong
 		}
 		return newArray;
@@ -28,9 +31,11 @@ public class MyArray {
 	}
 
 	// Method 2 :
-	// Method mirror that outputs the contents of an array in a
-	// reverse order like a mirror
-	// Example: input [1, 2, 3] ==> output: [1, 2, 3, 3, 2, 1]
+	// removes all duplicate elements from an array and returns a
+	// new array
+	// Input: 1 3 5 1 3 7 9 8
+	// Output: 1 3 5 7 9 8
+
 	public int[] removeDuplicate() {
 		// Xoá những số trùng trong mảng.
 		int n = array.length;
@@ -55,10 +60,6 @@ public class MyArray {
 		return endArray;
 	}
 	// Method 3 :
-	// removes all duplicate elements from an array and returns a
-	// new array
-	// Input: 1 3 5 1 3 7 9 8
-	// Output: 1 3 5 7 9 8
 
 	public int[] getMissingValues() {
 		int n = array.length;

@@ -4,5 +4,5 @@
 /**
  * 
  */
-module vonglap {
+module lab_project2 {
 }
