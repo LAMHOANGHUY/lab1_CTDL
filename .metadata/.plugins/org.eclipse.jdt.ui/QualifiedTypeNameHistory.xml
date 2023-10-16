@@ -9,4 +9,5 @@
     <fullyQualifiedTypeName name="lab3_task2.OrderItem"/>
     <fullyQualifiedTypeName name="lab3_task2.Order"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 </qualifiedTypeNameHistroy>
