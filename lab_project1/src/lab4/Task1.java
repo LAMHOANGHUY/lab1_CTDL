@@ -37,13 +37,13 @@ public class Task1 {
 //		Thuật toán sắp xếp chèn hoạt động bằng cách duyệt qua mảng, bắt đầu từ phần tử thứ hai. 
 //		Phần tử thứ nhất được coi là đã được sắp xếp. 
 		for (int i = 1; i < array.length; i++) {
-			int key = i ;
-				while (key>0 && array[key] > array[key -1] ) {
-					// swap
-					int temp = array[key];
-					array[key] = array[key-1];
-					array[key-1] = temp;
-					key--;
+			int key = i;
+			while (key > 0 && array[key] > array[key - 1]) {
+				// swap
+				int temp = array[key];
+				array[key] = array[key - 1];
+				array[key - 1] = temp;
+				key--;
 			}
 		}
 	}
@@ -64,7 +64,7 @@ public class Task1 {
 			System.out.print(array2[i] + " ");
 		}
 		System.out.println();
-		int[] array3 = { 4,3,2,10,12,1,5,6 };
+		int[] array3 = { 4, 3, 2, 10, 12, 1, 5, 6 };
 		insertionSort(array3);
 		System.out.println("Code sau khi insertionSort :");
 		for (int i = 0; i < array3.length; i++) {

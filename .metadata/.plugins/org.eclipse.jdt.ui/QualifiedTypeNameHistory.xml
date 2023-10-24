@@ -10,4 +10,6 @@
     <fullyQualifiedTypeName name="lab3_task2.Order"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="lab5.Task2.TicTacToe"/>
+    <fullyQualifiedTypeName name="lab5.Task2"/>
 </qualifiedTypeNameHistroy>
