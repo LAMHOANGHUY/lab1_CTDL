@@ -11,7 +11,6 @@ import java.util.TreeSet;
 public class MyWordCount {
 //	 public static final String fileName = "lab7/data/hamlet.txt";
 	public static final String fileName = "data/fit";
-
 	private List<String> words = new ArrayList<>();
 
 	public MyWordCount() {
@@ -123,7 +122,6 @@ public class MyWordCount {
 	}
 
 	public static void main(String[] args) {
-		MyWordCount myWC = new MyWordCount();
 		MyWordCount wordCounter = new MyWordCount();
 		List<WordCount> wordCounts = wordCounter.getWordCounts();
 		System.out.println("After: " + wordCounts);
@@ -144,16 +142,3 @@ public class MyWordCount {
 		System.out.println("filterWords L: " + wordCounts5);
 	}
 }
-
-//	List<WordCount> list = myWC.getWordCounts();
-//	Set<String> s1 = myWC.getUniqueWords();
-//	Set<String> s2 = myWC.getDistinctWords();
-//	Set<String> s3 = myWC.filterWords("B");
-//	Set<WordCount> s4 = myWC.printWordCounts();
-//	Set<WordCount> s5 = myWC.exportWordCountsByOccurence();
-//	
-//	for (WordCount w : s5) {
-//		System.out.println(w.toString());
-//	}
-//	
-//}

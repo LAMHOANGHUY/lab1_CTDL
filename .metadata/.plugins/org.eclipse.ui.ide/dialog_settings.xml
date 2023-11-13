@@ -14,6 +14,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Asus\Downloads\Lab 8_Map"/>
 			<item value="D:\CTDL\Lab 7_Set"/>
 			<item value="D:\CTDL\lab1"/>
 			<item value="D:\CTDL\lab1\src\lab1"/>
