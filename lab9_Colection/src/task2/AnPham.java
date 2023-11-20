@@ -68,12 +68,3 @@ public abstract class AnPham {
 
 }
 
-//	public boolean coThoiGianXuatBanCachDay(int namHienTai, int soNam) {
-//		return (namHienTai - namXuatBan) >= soNam;
-//	}
-
-//	// Phương thức kiểm tra hai ấn phẩm có cùng loại và cùng tác giả hay không
-//	public boolean kiemTraCungLoaiVaTacGia(AnPham anPham) {
-//		return this.xacDinhLoaiAnPham().equals(anPham.xacDinhLoaiAnPham()) && this.tacGia.equals(anPham.tacGia);
-//	}
-//	// Phương thức tính tổng tiền của ấn phẩm
