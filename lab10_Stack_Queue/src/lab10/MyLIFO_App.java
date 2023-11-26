@@ -145,14 +145,15 @@ public class MyLIFO_App {
 	// becomes
 	// front [a, b, c, c, b, a] back
 	public static <E> void mirror(Queue<E> input) {
-		Queue<E> temp = new LinkedList<>();
-		// Sao chép các phần tử từ hàng đợi gốc sang hàng đợi tạm thời
-		for (E element : input) {
-			temp.offer(element);
+		Stack<E> stack = new Stack<>();
+		for (int i = 0; i < input.size(); i++) {
+			E element = input.remove();
+			stack.push(element);
+			input.add(element);
 		}
-		// Sao chép lại các phần tử từ hàng đợi tạm thời sang hàng đợi gốc
-		while (!temp.isEmpty()) {
-			input.offer(temp.poll());
+		while (!stack.isEmpty()) {
+			E element = stack.pop();
+			input.add(element);
 		}
 	}
 
@@ -186,7 +187,7 @@ public class MyLIFO_App {
 		System.out.println("Before mirroring :" + queue2);
 		mirror(queue2);
 		System.out.println("After mirroring  :" + queue2);
-		
+
 		System.out.println("________________");
 
 		String expression1 = "5 + (4 * 3)";
